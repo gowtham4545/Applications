@@ -1,0 +1,72 @@
+.calci {
+    background: #d3cce3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        135deg,
+        #d8d3c6 ,
+        #5d6569
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    width: 100vw;
+    overflow: scroll;
+    
+    .heading{
+        text-shadow: 2px 2px 2px #9c9890;
+        animation: pulse;
+        animation-duration: 2s;
+    }
+
+    .container {
+        background-color: #e7e9e8;
+        overflow: scroll;
+        padding: 25px 0 25px 0;
+        margin: 20px 0 20px 0;
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #32b4ba;
+            text-align: left;
+            height: 100px;
+            font-family: Poppins;
+            background: linear-gradient(45deg, #3c3c3c, #252525);
+        }
+        .text::-webkit-scrollbar {
+            display: none;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            row-gap: 10px;
+            column-gap: 10px;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // align-items: center;
+            margin: 10px 0 10px 0;
+            // padding: 20px;
+            .button {
+                width: 80px;
+                border: #a6b0b1 solid;
+                height: 80px;
+                font-weight: 600;
+                font-size: 20px;
+                border-radius: 200px;
+                background: linear-gradient(135deg, #90a8a9, #d3d8d9);
+                box-shadow: 5px 5px 5px rgba(131, 131, 131, 0.473);
+            }:hover{
+                transform: scale(1.05);
+            }
+            #submit {
+                border: solid #036e8c;
+                background: linear-gradient(135deg, #0f6c7d, #29aeb8);
+            }
+        }
+    }
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
